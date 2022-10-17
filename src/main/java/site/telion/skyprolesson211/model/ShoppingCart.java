@@ -3,13 +3,14 @@ package site.telion.skyprolesson211.model;
 import lombok.Data;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Data
 @Component
-@Scope("session")
+@SessionScope
 public class ShoppingCart {
     private Set<Integer> productIdList;
 

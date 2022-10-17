@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.annotation.SessionScope;
 import site.telion.skyprolesson211.service.ShoppingCartService;
 
 import java.util.Set;
 
 @RestController
 @RequestMapping("/order")
-@Scope("session")
 public class ShoppingCartController {
 
     ShoppingCartService service;
