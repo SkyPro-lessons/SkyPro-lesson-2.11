@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 import site.telion.skyprolesson211.model.ShoppingCart;
 
 import java.util.HashSet;
@@ -12,7 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-@Scope("session")
+@SessionScope
 public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     ShoppingCart shoppingCart;
